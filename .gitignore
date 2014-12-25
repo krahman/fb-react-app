@@ -11,3 +11,6 @@ node_modules
 
 # Ignore bower components package
 app/components
+
+# Ignore build folder
+build
