@@ -1,4 +1,4 @@
-# Steps to deply
+# Steps to deploy
 
 ## Install bower locally
 run command "npm install bower"
@@ -7,6 +7,6 @@ run command "npm install bower"
 run command "bower init"
 
 ## Install react package locally
-run command "bower install react --save
+run command "bower install react --save"
 
 
