@@ -1,0 +1,13 @@
+# Ignore webstorm .idea folder
+.idea
+
+# Ignore bower folders
+.bower-cache
+.bower-registry
+.bower-tmp
+
+# Ignore node modules folder
+node_modules
+
+# Ignore bower components package
+app/components

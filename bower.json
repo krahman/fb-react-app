@@ -1,0 +1,20 @@
+{
+  "name": "fb-react-app",
+  "version": "0.0.1",
+  "authors": [
+    "khal <khal.rahman@gmail.com>"
+  ],
+  "description": "sample react app",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.12.2"
+  }
+}
