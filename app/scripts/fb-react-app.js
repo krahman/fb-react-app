@@ -4,7 +4,5 @@
 
 /*global React*/
 
-React.render(
-  React.createElement('h1', null, 'Hello, world!'),
-  document.getElementById('example')
-);
+var HelloWorld = React.createElement('h1', null, 'Hello World!');
+React.renderComponent(HelloWorld, document.getElementById('example'));

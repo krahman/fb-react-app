@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="app/components/react/react.min.js"></script>
-    <script src="app/components/react/JSXTransformer.js"></script>
-  </head>
-  <body>
-    <div id="example"></div>
-    <script src="build/fb-react-app.min.js"></script>
-  </body>
+<head>
+    <link rel="stylesheet" href="app/components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div id="example"></div>
+<script src="app/components/react/react.min.js"></script>
+<script src="app/components/react/JSXTransformer.js"></script>
+<script src="build/fb-react-app.min.js"></script>
+<script type="text/jsx">
+    /** @jsx React.DOM */
+    var APP =
+            React.createClass({
+                render: function () {
+                    return (
+                            <div>
+                                <BButton href="javascript:alert('hello')" className="btn-primary">
+                                    <BIcon className="glyphicon-heart" />
+                                    Button</BButton>
+                                <BButton href="javascript:alert('hello')" className="btn-success">
+                                    <BIcon className="glyphicon-pencil" />
+                                    Button</BButton>
+                                <BButton href="javascript:alert('hello')" className="btn-danger">
+                                    <BIcon className="glyphicon-inbox" />
+                                    Button</BButton>
+                            </div>
+                    )
+                }
+            });
+
+    var BButton =
+            React.createClass({
+                render: function () {
+                    return this.transferPropsTo(React.createElement('a', {className: "btn"}, this.props.children));
+                }
+            });
+
+    var BIcon =
+
+            React.createClass({
+                render: function () {
+                    return this.transferPropsTo(React.createElement('span', {className: 'glyphicon'}));
+                }
+            });
+
+    React.renderComponent(<APP />, document.body);
+</script>
+</body>
 </html>
